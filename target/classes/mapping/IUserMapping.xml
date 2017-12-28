@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"mybatis-3-mapper.dtd">
+<mapper namespace="mapping.IUserMapping">
+	<insert id="save" parameterType="entity.User">
+		insert into user(idnum,username,password,phonenum,usertype,status)
+		values(#{idnum},#{username},#{password},#{phonenum},#{usertype},#{status})
+	</insert>
+	<select id="selectByLogin" resultType="entity.User" parameterType="map" >
+		select * from user where username=#{0} and password=#{1}
+	</select>
+	<update id="updateUser" parameterType="entity.User">
+		update user set username=#{username},password=#{password},phonenum=#{phonenum},usertype=#{usertype},status=#{status}) 
+		where idnum=#{idnum}
+	</update>
+	
+</mapper>

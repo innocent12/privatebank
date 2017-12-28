@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>登录/注册页面</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Meta-Tags -->
+
+<!-- Style -->
+<link rel="stylesheet" href="/ssm_study/css/login.css" type="text/css" media="all">
+  </head>
+  
+  <body>
+   <h1><a href="/ssm_study/home_page.html" style="color: white;"><span>返回网银首页</span></a></h1>
+<div class="container w3layouts agileits">
+  <div class="login w3layouts agileits">
+    <h2>登 录</h2>
+    <form name="f1" action="user/login.spring" method="post">
+      <input type="text" Name="username" placeholder="用户名"  value="admin">
+      <input type="password" Name="password" placeholder="密码" >
+    <ul class="tick w3layouts agileits">
+      <li>
+        <input type="checkbox" id="brand1" value="">
+        <label for="brand1"><span></span>记住我</label>
+      </li>
+    </ul>
+    <div class="send-button w3layouts agileits">
+        <input type="submit" value="登 录">
+	</div>
+    </form>
+
+    <a href="/ssm_study/user/">找回密码</a>
+    <div class="social-icons w3layouts agileits">
+      <p>- 其他方式登录 -</p>
+      <ul>
+        <li class="qq"><a href="#"> <span class="icons w3layouts agileits"></span> <span class="text w3layouts agileits">QQ</span></a></li>
+        <li class="weixin w3ls"><a href="#"> <span class="icons w3layouts"></span> <span class="text w3layouts agileits">微信</span></a></li>
+        <li class="weibo aits"><a href="#"> <span class="icons agileits"></span> <span class="text w3layouts agileits">微博</span></a></li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="register w3layouts agileits">
+    <h2>用 户 注 册</h2>
+    <form name="f2" action="user/register.spring" method="post">
+      <input type="text" Name="username" placeholder="用户名" >
+	  <input type="text" Name="idnum" placeholder="身份证号">
+      <input type="text" Name="phonenum" placeholder="电话号码" >
+      <input type="password" Name="password" placeholder="密码" >
+      <input type="text" Name="userType" placeholder="用户类型" >
+    <div class="send-button w3layouts agileits">
+        <input type="submit" value="免费注册">
+    </div>
+    </form>
+
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="footer w3layouts agileits">
+  <p>Copyright &copy; More Templates</p>
+</div>
+  </body>
+</html>
